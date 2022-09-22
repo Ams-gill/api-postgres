@@ -1,0 +1,29 @@
+POST https://api.frontiertop.in/api/users
+Content-Type: application/json
+
+
+{
+    "name":"amrit1",
+    "email":"amsgill176@gmail.com",
+    "password":"amrit1"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email":"amsgill176@gmail.com",
+    "password":"amrit1"
+}
+
+###
+GET http://localhost:5000/api/users
+Authorization:  Bearer 
+
+###
+GET http://localhost:5000/api/auth/refresh_token
+
+###
+DELETE http://localhost:5000/api/auth/refresh_token
